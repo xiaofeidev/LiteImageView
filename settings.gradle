@@ -1,0 +1,3 @@
+include ':lib_lite'
+include ':app'
+rootProject.name = "LiteImageView"
