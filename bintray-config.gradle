@@ -1,6 +1,6 @@
 ext {
     def versionCode = 22
-    def versionName = "1.0.0"
+    def versionName = "1.0.1"
 
     //bintray 网站上你创建的仓库的名字（必配项）
     bintrayRepo = 'xiaofei'

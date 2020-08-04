@@ -6,7 +6,6 @@ import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.AttributeSet;
-import android.util.Log;
 
 import androidx.annotation.DrawableRes;
 import androidx.appcompat.widget.AppCompatImageView;
@@ -62,7 +61,7 @@ public class LiteImageView extends AppCompatImageView {
                 Bitmap adaptBitmap = getAdaptBitmap(getResources(), resId, (int)displayWidth, (int)displayHeight);
                 if (adaptBitmap != null){
                     setImageBitmap(adaptBitmap);
-                    Log.d(LiteImageView.this.getClass().getSimpleName(), String.format("实际加载到内存中的图片尺寸：width:%d，height:%d", adaptBitmap.getWidth(), adaptBitmap.getHeight()));
+//                    Log.d(LiteImageView.this.getClass().getSimpleName(), String.format("实际加载到内存中的图片尺寸：width:%d，height:%d", adaptBitmap.getWidth(), adaptBitmap.getHeight()));
                 } else {//获取到的位图是 null 则表示设置的图片资源不是位图
                     setImageResource(resId);
                 }
@@ -94,7 +93,7 @@ public class LiteImageView extends AppCompatImageView {
         //待加载位图的实际尺寸
         bitmapOriginWidth = options.outWidth;
         bitmapOriginHeight = options.outHeight;
-        Log.d(getClass().getSimpleName(), String.format("待加载图片的原始尺寸：width:%d，height:%d", bitmapOriginWidth, bitmapOriginWidth));
+//        Log.d(getClass().getSimpleName(), String.format("待加载图片的原始尺寸：width:%d，height:%d", bitmapOriginWidth, bitmapOriginWidth));
     }
 
     @Override
@@ -113,9 +112,7 @@ public class LiteImageView extends AppCompatImageView {
                 displayHeight = displayWidth * bitmapOriginHeight / bitmapOriginWidth;
             }
             post(mRunnableSetBitmap);
-        }
-        if (w > 0 && h > 0){
-            Log.d(getClass().getSimpleName(), String.format("ImageView 的实际尺寸：width:%d，height:%d", w, h));
+//            Log.d(getClass().getSimpleName(), String.format("ImageView 的实际尺寸：width:%d，height:%d", w, h));
         }
     }
 
