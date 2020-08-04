@@ -6,9 +6,9 @@
 
 ## 预览
 
-[图片]
+<img src="https://github.com/xiaofei-dev/LiteImageView/blob/master/art/preview.jpg" width="20%" height="20%">
 
-[图片]
+<img src="https://github.com/xiaofei-dev/LiteImageView/blob/master/art/msg.png" width="40%" height="40%">
 
 ## 使用
 
