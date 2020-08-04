@@ -40,7 +40,7 @@ implementation 'com.github.xiaofeidev:lite-image-view:latest_version'
     app:srcLite="@drawable/img_big"/>
 ```
 
-对于控件的宽高，一定要有一个是**确定的**值，然后另一个设置成 `wrap_content`。
+↑ 注意对于控件的宽高，一定要有一个是**确定的**值，然后另一个设置成 `wrap_content`。或者两个都是确定的尺寸值，但请不要把宽和高都设置成`wrap_content`！
 
 因为在 `LiteImageView` 内部确定位图采样率的时候必须要有一个锚定的 `View` 的尺寸值。如果没有这个锚定的尺寸值，就无法确定采样率，控件就会变成和普通的 `ImageView` 没啥区别了！
 
