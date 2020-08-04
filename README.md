@@ -8,7 +8,7 @@
 
 <img src="https://github.com/xiaofei-dev/LiteImageView/blob/master/art/preview.jpg" width="20%" height="20%">
 
-<img src="https://github.com/xiaofei-dev/LiteImageView/blob/master/art/msg.png" width="50%" height="50%">
+<img src="https://github.com/xiaofei-dev/LiteImageView/blob/master/art/msg.png" width="60%" height="60%">
 
 ## 使用
 
