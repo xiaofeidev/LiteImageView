@@ -1,4 +1,4 @@
-# LiteImageView[ ![Download](https://api.bintray.com/packages/xiaofei00/xiaofei/LiteImageView/images/download.svg) ](https://bintray.com/xiaofei00/xiaofei/LiteImageView/_latestVersion)
+# LiteImageView
 
 在展示项目中的位图资源时，能自动根据当前 `ImageView` 的尺寸确定采样率，加载合适尺寸的 `Bitmap`，从而避免加载到内存中的 `Bitmap` 尺寸大于当前 `ImageView` 的尺寸，以达到节省内存的目的。如此加载到内存中的 `Bitmap` 对象其尺寸总是不大于当前`ImageView`。
 
@@ -7,7 +7,7 @@
 `Gradle` 依赖:
 
 ```groovy
-implementation 'com.github.xiaofeidev:lite-image-view:latest_version'
+implementation 'com.github.xiaofeidev:lite-image-view:1.0.1'
 ```
 
 
